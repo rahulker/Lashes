@@ -10,13 +10,17 @@
   width: 1180px;
   text-align: center;
   margin: auto;
-  .custom-title {
-    line-height: 44px;
-    span {
-      color: $pink-text;
-    }
-  }
   p {
     margin-top: 20px;
   }
+}
+
+.custom-title {
+  line-height: 44px;
+  span {
+    color: $pink-text !important;
+  }
+}
+.user-content {
+  margin-left: -35px;
 }

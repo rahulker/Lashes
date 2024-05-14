@@ -1,0 +1,53 @@
+import "../assets/img/headerLeftImage.png";
+import "../assets/img/headerRightImage.png";
+import "../assets/img/middleImage.png";
+import "../assets/img/mobileSearch.svg";
+import "../assets/img/user1.png";
+import "../assets/img/user2.png";
+import "../assets/img/user3.png";
+import "../assets/img/user4.png";
+import "../assets/img/lastUser.png";
+import "../assets/img/onek.png";
+import "../assets/img/CrownIcon.svg";
+import "../assets/img/DataIcon.svg";
+import "../assets/img/educateHat.svg";
+import "../assets/img/HeartIcon.svg";
+import "../assets/img/ShopIcon.svg";
+import "../assets/img/bannerImage.jpg";
+import "../assets/img/Brows.svg";
+import "../assets/img/Lumina.svg";
+import "../assets/img/lashes.svg";
+import "../assets/img/Skin.svg";
+import "../assets/img/mainLogo.svg";
+import "../assets/img/userIcon.svg";
+import "../assets/img/shoppingCartIcon.svg";
+import "../assets/img/magnifying-glass-solid.svg";
+import "../assets/img/mobileMenu.svg";
+const PathImage = {
+  headerLeftImage: "/src/assets/img/headerLeftImage.png",
+  headerRightImage: "/src/assets/img/headerRightImage.png",
+  middleImage: "/src/assets/img/middleImage.png",
+  user1: "/src/assets/img/user1.png",
+  user2: "/src/assets/img/user2.png",
+  user3: "/src/assets/img/user3.png",
+  user4: "/src/assets/img/user4.png",
+  lastUser: "/src/assets/img/lastUser.png",
+  CrownIcon: "/src/assets/img/CrownIcon.svg",
+  DataIcon: "/src/assets/img/DataIcon.svg",
+  educateHat: "/src/assets/img/educateHat.svg",
+  HeartIcon: "/src/assets/img/HeartIcon.svg",
+  ShopIcon: "/src/assets/img/ShopIcon.svg",
+  Skin: "/src/assets/img/Skin.svg",
+  brows: "/src/assets/img/Brows.svg",
+  lumina: "/src/assets/img/Lumina.svg",
+  lashes: "/src/assets/img/lashes.svg",
+  mainLogo: "/src/assets/img/mainLogo.svg",
+  shoppingCart: "/src/assets/img/shoppingCartIcon.svg",
+  userIcon: "/src/assets/img/userIcon.svg",
+  searchIcon: "/src/assets/img/magnifying-glass-solid.svg",
+  mobileMenu: "/src/assets/img/mobileMenu.svg",
+  mobileSearch: "/src/assets/img/mobileSearch.svg",
+  onek: "/src/assets/img/onek.png",
+};
+
+export default PathImage;

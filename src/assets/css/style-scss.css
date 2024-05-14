@@ -40,6 +40,82 @@ button {
   line-height: 16px;
 }
 
+.input-search {
+  background-color: rgba(28, 28, 28, 0.05);
+  color: #1c1c1c;
+  width: 940px;
+  padding: 10px 40px;
+}
+
+::-moz-placeholder {
+  color: #1c1c1c;
+  opacity: 1;
+}
+
+::placeholder {
+  color: #1c1c1c;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .mobile-nav {
+    width: 100%;
+    background-color: #ea5297;
+    left: -100%;
+    top: 59px;
+    transition: 0.2s;
+  }
+  .mobile-nav ul a,
+  .mobile-nav ul li {
+    display: block;
+    width: 100%;
+  }
+  .mobile-nav ul li {
+    color: #fff;
+  }
+  .mobile-nav.active {
+    left: 0;
+  }
+}
+.image-trio {
+  margin-top: 60px;
+}
+
+.header-l-image {
+  z-index: -2;
+  left: 18.5%;
+  bottom: 0;
+}
+
+.header-r-image {
+  right: 18.5%;
+  z-index: -2;
+  bottom: 0;
+}
+
+.container-users {
+  padding: 15px 20px;
+}
+
+.user {
+  position: relative;
+}
+.user:nth-child(2) {
+  right: 10px;
+}
+.user:nth-child(3) {
+  right: 20px;
+}
+.user:nth-child(4) {
+  right: 30px;
+}
+.user:nth-child(5) {
+  right: 40px;
+}
+.user:nth-child(6) {
+  right: 50px;
+}
+
 .Custom-btn {
   background: #ea5297 !important;
   padding: 25px 30px;
@@ -52,12 +128,17 @@ button {
   text-align: center;
   margin: auto;
 }
-.custom-title-div .custom-title {
-  line-height: 44px;
-}
-.custom-title-div .custom-title span {
-  color: #ea5297;
-}
 .custom-title-div p {
   margin-top: 20px;
+}
+
+.custom-title {
+  line-height: 44px;
+}
+.custom-title span {
+  color: #ea5297 !important;
+}
+
+.user-content {
+  margin-left: -35px;
 }/*# sourceMappingURL=style-scss.css.map */
