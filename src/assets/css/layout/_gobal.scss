@@ -4,8 +4,12 @@
   margin: 0;
   padding: 0;
   color: $dark-text;
+  font-family: Helvetica;
 }
 
+.marging {
+  margin: auto 370px;
+}
 .container-div {
   width: 1920px;
   margin-left: auto;
@@ -16,13 +20,14 @@
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 48px;
+  line-height: 54px;
 }
 
 p {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 28px;
 }
 
 h1,
@@ -79,12 +84,12 @@ button {
 
 .header-l-image {
   z-index: -2;
-  left: 18.5%;
+  left: -18px;
   bottom: 0;
 }
 
 .header-r-image {
-  right: 18.5%;
+  right: -18px;
   z-index: -2;
   bottom: 0;
 }
@@ -110,4 +115,121 @@ button {
   &:nth-child(6) {
     right: 50px;
   }
+}
+
+.product-background {
+  background: #f3f3f3;
+  padding-bottom: 160px;
+}
+
+.product-container {
+  padding: 115px 0;
+}
+
+.heading-title {
+  p {
+    padding: 0 110px;
+  }
+}
+
+.product-menction {
+  margin-top: 60px;
+}
+
+.button-custom {
+  margin-top: 60px;
+  svg {
+    margin-left: 10px;
+  }
+}
+
+.level-product {
+  padding: 110px 100px 258px;
+  margin: auto 270px;
+}
+
+.level-para {
+  padding: 0 110px;
+}
+
+.leves-cards {
+  margin-top: 60px;
+}
+
+.level-cards {
+  height: auto;
+}
+
+.quality-level-list {
+  li {
+    list-style: disc inside;
+    font-size: 14px;
+    &::marker {
+      color: $pink-text;
+    }
+  }
+}
+
+.floating-banner {
+  background: $banner-color;
+  padding-right: 40px;
+  bottom: -50px;
+  h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  p {
+    margin-top: 5px;
+  }
+}
+
+.product-list {
+  margin-top: 110px;
+}
+
+.product-list {
+  margin-top: 60px;
+}
+
+.border-color {
+  border-color: #f3f3f3;
+}
+.product-text {
+  background: #f3f3f3;
+  padding: 20px;
+}
+
+.pink-background {
+  background-color: $banner-color;
+  margin-top: 120px;
+}
+
+.clint-review {
+  padding: 110px 0 120px;
+}
+
+.swiper-container {
+  margin-top: 60px;
+}
+
+.card-clint {
+  padding: 40px;
+  background: #fff;
+}
+
+.clint-say-date {
+  opacity: 0.8;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.clint-say {
+  width: 300px;
+}
+
+.show-more {
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: underline;
 }

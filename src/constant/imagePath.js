@@ -1,4 +1,12 @@
 import "../assets/img/headerLeftImage.png";
+import "../assets/img/Star.svg";
+import "../assets/img/level-one.svg";
+import "../assets/img/verified.svg";
+import "../assets/img/level-two.svg";
+import "../assets/img/level-three.svg";
+import "../assets/img/level-four.svg";
+import "../assets/img/level-five.svg";
+import "../assets/img/miniLogo.svg";
 import "../assets/img/headerRightImage.png";
 import "../assets/img/middleImage.png";
 import "../assets/img/mobileSearch.svg";
@@ -7,6 +15,9 @@ import "../assets/img/user2.png";
 import "../assets/img/user3.png";
 import "../assets/img/user4.png";
 import "../assets/img/lastUser.png";
+import "../assets/img/clint-frist.png";
+import "../assets/img/clint-second.png";
+import "../assets/img/thrid-clint.png";
 import "../assets/img/onek.png";
 import "../assets/img/CrownIcon.svg";
 import "../assets/img/DataIcon.svg";
@@ -23,6 +34,18 @@ import "../assets/img/userIcon.svg";
 import "../assets/img/shoppingCartIcon.svg";
 import "../assets/img/magnifying-glass-solid.svg";
 import "../assets/img/mobileMenu.svg";
+import "../assets/img/sets.png";
+import "../assets/img/outlet.png";
+import "../assets/img/Einrichtung.png";
+import "../assets/img/Schulungen.png";
+import "../assets/img/pflege-and-zubehor.png";
+import "../assets/img/farben.png";
+import "../assets/img/waximg.png";
+import "../assets/img/lifting.png";
+import "../assets/img/kleber.png";
+import "../assets/img/pinzetten.png";
+import "../assets/img/lashes.png";
+import "../assets/img/studioausstattung.png";
 const PathImage = {
   headerLeftImage: "/src/assets/img/headerLeftImage.png",
   headerRightImage: "/src/assets/img/headerRightImage.png",
@@ -48,6 +71,29 @@ const PathImage = {
   mobileMenu: "/src/assets/img/mobileMenu.svg",
   mobileSearch: "/src/assets/img/mobileSearch.svg",
   onek: "/src/assets/img/onek.png",
+  miniLogo: "/src/assets/img/miniLogo.svg",
+  levelOne: "/src/assets/img/level-one.svg",
+  levelTwo: "/src/assets/img/level-two.svg",
+  levelThree: "/src/assets/img/level-three.svg",
+  levelFour: "/src/assets/img/level-four.svg",
+  levelFive: "/src/assets/img/level-five.svg",
+  bannerImage: "/src/assets/img/bannerImage.jpg",
+  sets: "/src/assets/img/sets.png",
+  outlet: "/src/assets/img/outlet.png",
+  Einrichtung: "/src/assets/img/Einrichtung.png",
+  Schulungen: "/src/assets/img/Schulungen.png",
+  pflege: "/src/assets/img/pflege-and-zubehor.png",
+  farben: "/src/assets/img/farben.png",
+  waxing: "/src/assets/img/waximg.png",
+  lifting: "/src/assets/img/lifting.png",
+  kleber: "/src/assets/img/kleber.png",
+  pinzetten: "/src/assets/img/pinzetten.png",
+  lashe: "/src/assets/img/lashes.png",
+  studio: "/src/assets/img/studioausstattung.png",
+  clintFrist: "/src/assets/img/clint-frist.png",
+  clintSecond: "/src/assets/img/clint-second.png",
+  ClintThrid: "/src/assets/img/thrid-clint.png",
+  star: "/src/assets/img/Star.svg",
+  vrified: "/src/assets/img/verified.svg",
 };
-
 export default PathImage;

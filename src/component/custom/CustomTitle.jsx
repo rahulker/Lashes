@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-const CustomTitle = ({ darkText, pinkText, paraContent }) => {
+function CustomTitle({ darkText, pinkText, paraContent }) {
   return (
     <div className="custom-title-div">
       <h2 className="custom-title">
@@ -8,7 +8,7 @@ const CustomTitle = ({ darkText, pinkText, paraContent }) => {
       <p>{paraContent}</p>
     </div>
   );
-};
+}
 CustomTitle.propTypes = {
   darkText: PropTypes.string,
   pinkText: PropTypes.string,

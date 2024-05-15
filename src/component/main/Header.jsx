@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
       <ConditionNav />
-      <div className="image-trio flex justify-center relative">
+      <div className="image-trio flex justify-center relative marging">
         <img
           src={PathImage.headerLeftImage}
           alt="header left image"
