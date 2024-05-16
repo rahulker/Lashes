@@ -2,7 +2,7 @@ import PathImage from "../../constant/imagePath";
 import CustomTitle from "../custom/CustomTitle";
 import ProductDetails from "../custom/productDetail";
 import CustomButton from "../custom/CustomButton";
-function ProductInfo() {
+const ProductInfo = () => {
   return (
     <section className="product-background product-container">
       <div className="marging">
@@ -53,6 +53,6 @@ function ProductInfo() {
       </div>
     </section>
   );
-}
+};
 
 export default ProductInfo;

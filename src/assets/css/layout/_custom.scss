@@ -16,7 +16,6 @@
 }
 
 .custom-title {
-  line-height: 44px;
   span {
     color: $pink-text !important;
   }
@@ -27,4 +26,37 @@
 
 .new-btn {
   padding: 25px 65px;
+}
+
+.accodination-container {
+  margin-top: 60px;
+}
+
+.acodination-actual {
+  padding: 30px;
+  h3 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+  }
+}
+
+.accodination-dropdown {
+  padding: 20px 30px;
+  border-color: $pink-text;
+  .fristInfo {
+    color: $pink-text;
+  }
+  .accodination-para {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.cross-arrow {
+  transform: rotate(44deg);
+}
+
+.new-floating-banner {
+  bottom: -28px;
 }

@@ -1,6 +1,6 @@
 import ConditionNav from "./conditionNav";
 import PathImage from "../../constant/imagePath";
-function Header() {
+const Header = () => {
   return (
     <header>
       <ConditionNav />
@@ -32,6 +32,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

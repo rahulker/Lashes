@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-function LevelCards({
+const LevelCards = ({
   imgContent,
   levelNum,
   percentage,
@@ -8,7 +8,7 @@ function LevelCards({
   listThree,
   hiddenOrShow,
   hiddenOrShow2,
-}) {
+}) => {
   return (
     <div className="level-cards text-left w-fit">
       <img src={imgContent} alt="level of product quality" />
@@ -24,7 +24,7 @@ function LevelCards({
       </div>
     </div>
   );
-}
+};
 LevelCards.propTypes = {
   imgContent: PropTypes.any,
   levelNum: PropTypes.string,

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import PropTypes from "prop-types";
-function ProductItem({ imageContent, productTitle }) {
+const ProductItem = ({ imageContent, productTitle }) => {
   return (
     <div className="border border-color h-auto">
       <img src={imageContent} />
@@ -11,7 +11,7 @@ function ProductItem({ imageContent, productTitle }) {
       </div>
     </div>
   );
-}
+};
 ProductItem.propTypes = {
   imageContent: PropTypes.any,
   productTitle: PropTypes.string,

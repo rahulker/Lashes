@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: $dark-text;
   font-family: Helvetica;
 }
 
@@ -20,13 +19,14 @@
 }
 
 h2 {
-  font-size: 48px;
-  line-height: 54px;
+  font-size: 44px;
+  line-height: 50px;
 }
 
 p {
   font-size: 18px;
   font-weight: 400;
+  color: $dark-text;
   line-height: 28px;
 }
 
@@ -37,6 +37,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+  color: $dark-text;
 }
 
 button {
@@ -226,10 +227,101 @@ button {
 
 .clint-say {
   width: 300px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
 
 .show-more {
   font-size: 12px;
   line-height: 20px;
   text-decoration: underline;
+}
+
+.arrow-reverse {
+  transform: rotate(180deg);
+}
+
+.swiper-control {
+  margin-top: 60px;
+  .nexIcon {
+    color: #ea5297 !important;
+  }
+}
+
+.ceo-background {
+  margin-top: 0;
+  padding: 0 270px 120px;
+}
+
+.actual-container {
+  padding: 110px 100px 100px;
+}
+
+.main-ceo {
+  margin-top: 60px;
+}
+
+.content-box {
+  background: #f3f3f3;
+  padding: 52px;
+  .ceo-name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .status {
+    line-height: 26px;
+    font-size: 16px;
+  }
+}
+
+.ceo-saying {
+  font-size: 20px;
+  line-height: 30px;
+  width: 470px;
+}
+
+.floating-bg {
+  background-color: #f3f3f3;
+  margin: 160px 0 120px;
+  .floating-div-container {
+    padding: 65px 370px;
+  }
+}
+
+.makeup-container {
+  display: grid;
+  grid-template-columns: 590px 610px;
+  gap: 60px;
+}
+
+.new-marging {
+  margin-right: 290px;
+}
+
+.pink-footer {
+  padding: 100px 60px 140px 370px;
+  background: #ffebeb;
+}
+footer {
+  h4,
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.white-footer {
+  padding: 100px 370px 100px 60px;
+  background-color: rgba($color: $dark-text, $alpha: 0.05);
+}
+
+.footer-btn {
+  padding: 10px 61px !important;
+}
+
+.social-icon {
+  margin-top: 60px;
+  gap: 30px;
 }

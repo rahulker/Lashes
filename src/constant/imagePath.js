@@ -1,10 +1,14 @@
 import "../assets/img/headerLeftImage.png";
 import "../assets/img/Star.svg";
+import "../assets/img/HalfMiniLogo.svg";
 import "../assets/img/level-one.svg";
 import "../assets/img/verified.svg";
+import "../assets/img/makeUpSample.png";
 import "../assets/img/level-two.svg";
 import "../assets/img/level-three.svg";
 import "../assets/img/level-four.svg";
+import "../assets/img/ProfilrCeo.png";
+import "../assets/img/BigCeoPhoto.png";
 import "../assets/img/level-five.svg";
 import "../assets/img/miniLogo.svg";
 import "../assets/img/headerRightImage.png";
@@ -95,5 +99,9 @@ const PathImage = {
   ClintThrid: "/src/assets/img/thrid-clint.png",
   star: "/src/assets/img/Star.svg",
   vrified: "/src/assets/img/verified.svg",
+  miniCeo: "/src/assets/img/ProfilrCeo.png",
+  mainCeo: "/src/assets/img/BigCeoPhoto.png",
+  makeUpSample: "/src/assets/img/makeUpSample.png",
+  halfMiniLogo: "/src/assets/img/HalfMiniLogo.svg",
 };
 export default PathImage;

@@ -1,6 +1,6 @@
 import PathImage from "../../constant/imagePath";
 import NavItems from "../custom/navItems";
-function NavigationBar() {
+const NavigationBar = () => {
   return (
     <nav>
       <div className="flex justify-center items-center">
@@ -124,6 +124,6 @@ function NavigationBar() {
       </div>
     </nav>
   );
-}
+};
 
 export default NavigationBar;

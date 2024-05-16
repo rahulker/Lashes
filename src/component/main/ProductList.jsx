@@ -1,7 +1,7 @@
 import CustomTitle from "../custom/CustomTitle";
 import PathImage from "../../constant/imagePath";
 import ProductItem from "../custom/ProductItem";
-function ProductList() {
+const ProductList = () => {
   return (
     <section className="marging product-list">
       <div className="text-center">
@@ -52,6 +52,6 @@ function ProductList() {
       </div>
     </section>
   );
-}
+};
 
 export default ProductList;

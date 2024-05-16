@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-function NavItems({ ItemText, paddingL, paddingR, borderPara }) {
+const NavItems = ({ ItemText, paddingL, paddingR, borderPara }) => {
   return (
     <a href="#">
       <li
@@ -10,7 +10,7 @@ function NavItems({ ItemText, paddingL, paddingR, borderPara }) {
       </li>
     </a>
   );
-}
+};
 NavItems.propTypes = {
   ItemText: PropTypes.string.isRequired,
   paddingL: PropTypes.string.isRequired,

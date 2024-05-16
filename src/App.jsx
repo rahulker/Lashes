@@ -5,6 +5,11 @@ import ProductInfo from "./component/main/productInfo";
 import ImprovementLevel from "./component/main/improvementLevel";
 import ProductList from "./component/main/ProductList";
 import ClintReview from "./component/main/clintReview";
+import CeoContent from "./component/main/CeoContent";
+import Faq from "./component/main/FAQ";
+import FloatingSection from "./component/main/FloatingSection";
+import SampleMakeUp from "./component/main/SampleMakeUp";
+import Footer from "./component/main/Footer";
 function App() {
   return (
     <div className="container-div">
@@ -13,6 +18,11 @@ function App() {
       <ImprovementLevel />
       <ProductList />
       <ClintReview />
+      <CeoContent />
+      <Faq />
+      <FloatingSection />
+      <SampleMakeUp />
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import PathImage from "../../constant/imagePath";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import LevelCards from "../custom/LevelCards";
-function ImprovementLevel() {
+const ImprovementLevel = () => {
   return (
     <section className="product-background">
       <div className=" bg-white level-product text-center relative">
@@ -87,7 +87,7 @@ function ImprovementLevel() {
               deiner Studioausstattung und vielem mehr!
             </p>
           </div>
-          <button className="text-white Custom-btn new-btn">
+          <button className="text-white Custom-btn new-btn flex items-center gap-2.5">
             Jetzt registrieren
             <FontAwesomeIcon icon={faArrowRight} style={{ color: "#ffffff" }} />
           </button>
@@ -95,6 +95,6 @@ function ImprovementLevel() {
       </div>
     </section>
   );
-}
+};
 
 export default ImprovementLevel;

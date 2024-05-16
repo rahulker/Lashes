@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-function ProductDetails({ imgContent, FristPara, SecondPara }) {
+const ProductDetails = ({ imgContent, FristPara, SecondPara }) => {
   return (
     <div className="flex items-center gap-1.5">
       <img src={imgContent} />
@@ -9,7 +9,7 @@ function ProductDetails({ imgContent, FristPara, SecondPara }) {
       </div>
     </div>
   );
-}
+};
 ProductDetails.propTypes = {
   imgContent: PropTypes.any.isRequired,
   FristPara: PropTypes.string.isRequired,
