@@ -1,6 +1,7 @@
 import CustomTitle from "../custom/CustomTitle";
 import PathImage from "../../constant/imagePath";
 import ProductItem from "../custom/ProductItem";
+import MobileProductSwiper from "../custom/MobileProductSwiper";
 const ProductList = () => {
   return (
     <section className="marging product-list">
@@ -17,7 +18,7 @@ const ProductList = () => {
           alt="mini site logo"
           className="mx-auto mt-5"
         />
-        <div className="product-list grid grid-cols-4 gap-5">
+        <div className="product-list xl:grid grid-cols-4 hidden gap-5">
           <ProductItem imageContent={PathImage.sets} productTitle="Sets" />
           <ProductItem imageContent={PathImage.lashe} productTitle="Lashes" />
           <ProductItem
@@ -48,6 +49,9 @@ const ProductList = () => {
             imageContent={PathImage.studio}
             productTitle="Studioausstattung"
           />
+        </div>
+        <div className="mt-10 xl:hidden">
+          <MobileProductSwiper />
         </div>
       </div>
     </section>

@@ -37,6 +37,17 @@ const ClintReview = () => {
             slidesPerView={3}
             autoplay={{ delay: 2000 }}
             loop
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              640: {
+                slidesPerView: 2,
+              },
+              1280: {
+                slidesPerView: 3,
+              },
+            }}
             navigation={{
               nextEl: navigationNextRef.current,
               prevEl: navigationPrevRef.current,

@@ -17,10 +17,10 @@ const ProductInfo = () => {
           <img
             src={PathImage.miniLogo}
             alt="mini site logo"
-            className="mx-auto mt-5"
+            className="mx-auto md:mt-5 mt-2.5 sm:mt-4"
           />
         </div>
-        <div className="flex product-menction justify-between">
+        <div className="product-menction  w-fit md:w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-x-24 gap-y-5 md:grid-cols-3 md:gap-x-2 sm:gap-y-8 lg:grid-cols-4 xl:grid-cols-5">
           <ProductDetails
             imgContent={PathImage.CrownIcon}
             FristPara="Hochwertige und"
@@ -48,7 +48,12 @@ const ProductInfo = () => {
           />
         </div>
         <div className="w-fit mx-auto button-custom">
-          <CustomButton text="Jetzt registrieren & Rabatte sichern" />
+          <div className="hidden md:block">
+            <CustomButton text="Jetzt registrieren & Rabatte sichern" />
+          </div>
+          <div className="md:hidden block">
+            <CustomButton text="Jetzt als Kosmetikstudio registrieren" />
+          </div>
         </div>
       </div>
     </section>

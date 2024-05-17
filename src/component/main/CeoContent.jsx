@@ -3,7 +3,7 @@ import CustomTitle from "../custom/CustomTitle";
 import CustomButton from "../custom/CustomButton";
 const CeoContent = () => {
   return (
-    <section className="pink-background ceo-background">
+    <section className="pink-background ceo-background rounded-lg">
       <div className="bg-white actual-container">
         <CustomTitle
           darkText="Jetzt als Studio registrieren"

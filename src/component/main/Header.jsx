@@ -1,22 +1,33 @@
-import ConditionNav from "./conditionNav";
+import NavigationBar from "./navigationBar";
 import PathImage from "../../constant/imagePath";
 const Header = () => {
   return (
     <header>
-      <ConditionNav />
-      <div className="image-trio flex justify-center relative marging">
-        <img
-          src={PathImage.headerLeftImage}
-          alt="header left image"
-          className="header-l-image absolute"
-        />
-        <img src={PathImage.middleImage} alt="header middle image" />
-        <img
-          src={PathImage.headerRightImage}
-          alt="header right image"
-          className="header-r-image absolute"
-        />
-        <div className="absolute bg-white container-users -bottom-8 flex items-center ">
+      <NavigationBar />
+      <div className="image-trio flex justify-center relative marging ">
+        <div className="relative actual-image-trio flex justify-center">
+          <img
+            src={PathImage.middleImage}
+            alt="header middle image"
+            className="hidden lg:block"
+          />
+          <img
+            src={PathImage.mobileMiddleImage}
+            alt="header middle image"
+            className="lg:hidden block"
+          />
+          <img
+            src={PathImage.headerLeftImage}
+            alt="header left image"
+            className="header-l-image absolute"
+          />
+          <img
+            src={PathImage.headerRightImage}
+            alt="header right image"
+            className="header-r-image absolute"
+          />
+        </div>
+        <div className="absolute bg-white container-users gap-3.5 md:-bottom-9 lg:-bottom-8 md:flex-row flex flex-col items-center rounded-md -bottom-16 sm:-bottom-14">
           <div className="flex items-center w-fit">
             <img src={PathImage.user1} alt="user1" className="user" />
             <img src={PathImage.user2} alt="user2" className="user" />

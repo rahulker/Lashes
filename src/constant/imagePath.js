@@ -1,7 +1,21 @@
 import "../assets/img/headerLeftImage.png";
 import "../assets/img/Star.svg";
+import "../assets/img/mobileMiddleImage.png";
+import "../assets/img/visa.svg";
+import "../assets/img/gls.svg";
+import "../assets/img/dhl.svg";
+import "../assets/img/card.svg";
+import "../assets/img/sofort.svg";
+import "../assets/img/giro.svg";
+import "../assets/img/sepa.svg";
+import "../assets/img/paypile.svg";
 import "../assets/img/HalfMiniLogo.svg";
 import "../assets/img/level-one.svg";
+import "../assets/img/mobileLevelFive.svg";
+import "../assets/img/mobileLevelFour.svg";
+import "../assets/img/mobileLevelThree.svg";
+import "../assets/img/mobileLevelTwo.svg";
+import "../assets/img/mobileLevelOne.svg";
 import "../assets/img/verified.svg";
 import "../assets/img/makeUpSample.png";
 import "../assets/img/level-two.svg";
@@ -103,5 +117,19 @@ const PathImage = {
   mainCeo: "/src/assets/img/BigCeoPhoto.png",
   makeUpSample: "/src/assets/img/makeUpSample.png",
   halfMiniLogo: "/src/assets/img/HalfMiniLogo.svg",
+  visa: "/src/assets/img/visa.svg",
+  sepa: "/src/assets/img/sepa.svg",
+  payPile: "/src/assets/img/paypile.svg",
+  card: "/src/assets/img/card.svg",
+  sofor: "/src/assets/img/sofort.svg",
+  giro: "/src/assets/img/giro.svg",
+  gls: "/src/assets/img/gls.svg",
+  dhl: "/src/assets/img/dhl.svg",
+  mobileMiddleImage: "/src/assets/img/mobileMiddleImage.png",
+  mobileLevelFive: "/src/assets/img/mobileLevelFive.svg",
+  mobileLevelFour: "/src/assets/img/mobileLevelFour.svg",
+  mobileLevelThree: "/src/assets/img/mobileLevelThree.svg",
+  mobileLevelTwo: "/src/assets/img/mobileLevelTwo.svg",
+  mobileLevelOne: "/src/assets/img/mobileLevelOne.svg",
 };
 export default PathImage;

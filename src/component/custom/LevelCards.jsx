@@ -14,8 +14,13 @@ const LevelCards = ({
       <img src={imgContent} alt="level of product quality" />
       {/* content of card */}
       <div className="mt-5 flex flex-col gap-2.5">
-        <p className="opacity-20">{levelNum}</p>
-        <p className="font-bold">{percentage}</p>
+        <p className="opacity-20 text-center hidden lg:block lg:text-left">
+          {levelNum}
+        </p>
+        <p className="opacity-100 text-center lg:hidden lg:text-left new-color">
+          {levelNum}
+        </p>
+        <p className="font-bold text-center lg:text-left">{percentage}</p>
         <ul className="quality-level-list">
           <li>{ListOne}</li>
           <li style={{ display: hiddenOrShow }}>{listTwo}</li>
