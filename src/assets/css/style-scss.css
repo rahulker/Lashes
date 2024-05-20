@@ -44,8 +44,8 @@ h2 {
 }
 @media screen and (max-width: 639px) {
   h2 {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -220,19 +220,6 @@ button {
   color: #ea5297;
 }
 
-.floating-banner {
-  background: #ffebeb;
-  padding-right: 40px;
-  bottom: -50px;
-}
-.floating-banner h3 {
-  font-size: 28px;
-  line-height: 32px;
-}
-.floating-banner p {
-  margin-top: 5px;
-}
-
 .product-list {
   margin-top: 60px;
 }
@@ -393,11 +380,53 @@ footer li:hover {
   .clint-review {
     padding: 60px 15px;
   }
+  .social-icon {
+    margin-top: 40px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer li {
+    margin-top: 10px;
+  }
+  footer h4 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  footer .footer-btn {
+    padding: 10px 36px !important;
+  }
+  .pink-footer {
+    padding: 60px 15px;
+  }
+  .makeup-container {
+    grid-template-columns: auto;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0 15px;
+    gap: 40px;
+  }
+  .actual-container {
+    padding: 60px 10px 10px;
+    margin: 0 5px;
+  }
+  .content-box {
+    padding: 30px;
+  }
+  .ceo-saying {
+    width: auto;
+    font-size: 16px;
+    line-height: 28px;
+  }
   .product-list {
     margin: 60px 15px !important;
   }
   .image-trio {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
   .image-trio .header-l-image,
   .image-trio .header-r-image {
@@ -447,18 +476,32 @@ footer li:hover {
   .clint-review {
     padding: 60px 15px;
   }
+  .makeup-container {
+    grid-template-columns: auto;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0 15px;
+    gap: 40px;
+  }
+  .pink-footer {
+    padding: 60px 15px;
+  }
   .actual-image-trio img {
     width: 500px;
   }
-  .floating-banner {
-    padding-right: 0;
-    left: 20%;
+  .actual-container {
+    padding: 60px 10px 10px;
+    margin: 0 5px;
+  }
+  .ceo-saying {
+    font-size: 16px;
+    line-height: 28px;
   }
   .product-container {
     padding: 106px 15px 96px;
   }
   .image-trio {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
   .header-l-image {
     left: -28px;
@@ -487,17 +530,22 @@ footer li:hover {
   .clint-review {
     padding: 60px 15px;
   }
+  .ceo-saying {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .makeup-container {
+    grid-template-columns: auto;
+    margin-top: 120px;
+    text-align: center;
+    padding: 0 15px;
+    gap: 40px;
+  }
   .product-list {
-    margin: 60px 15px !important;
+    margin: 80px 15px !important;
   }
   .actual-image-trio img {
     width: 600px;
-  }
-  .floating-banner {
-    padding-right: 0;
-    padding-bottom: 30px;
-    bottom: -11%;
-    left: 32%;
   }
   .level-product {
     padding: 60px 10px 360px;
@@ -514,7 +562,7 @@ footer li:hover {
     padding: 106px 0;
   }
   .image-trio {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
   .header-l-image {
     left: -10%;
@@ -543,9 +591,23 @@ footer li:hover {
   .actual-image-trio img {
     width: 70%;
   }
-  .floating-banner {
-    padding-right: 0;
-    left: 10%;
+  .makeup-container {
+    grid-template-columns: auto auto;
+    margin-top: 60px;
+    text-align: left;
+    padding: 0 40px;
+    gap: 25px;
+  }
+  .actual-container {
+    padding: 60px 40px 20px;
+    margin: 0 5px;
+  }
+  .content-box {
+    padding: 20px 30px;
+  }
+  .ceo-saying {
+    font-size: 18px;
+    line-height: 26px;
   }
   .level-product {
     padding: 60px 10px 225px;
@@ -553,7 +615,7 @@ footer li:hover {
     margin-right: 5px !important;
   }
   .image-trio {
-    margin-top: 40px;
+    margin-top: 40px !important;
   }
   .header-l-image,
   .header-r-image {
@@ -582,9 +644,23 @@ footer li:hover {
     margin-right: 40px !important;
   }
   .floating-banner {
-    padding-right: 23px;
-    left: 7%;
-    right: 7%;
+    left: 15% !important;
+    transform: translateX(0) !important;
+    bottom: 6% !important;
+  }
+  .content-box-makeup {
+    padding-bottom: 30px;
+  }
+  .markup-image {
+    margin-bottom: -30px;
+  }
+  .actual-container {
+    padding: 60px 20px 20px;
+    margin: 0 20px;
+  }
+  .pink-footer,
+  .white-footer {
+    padding: 100px 60px;
   }
   .product-list {
     margin: 60px 40px !important;
@@ -592,11 +668,14 @@ footer li:hover {
   .clint-review {
     padding: 60px 0;
   }
+  .makeup-container {
+    grid-template-columns: auto auto;
+    margin-top: 60px;
+    text-align: left;
+    padding: 0 40px;
+    gap: 60px;
+  }
 }
-.new-color {
-  color: #ea5297;
-}
-
 .Custom-btn {
   background: #ea5297 !important;
   padding: 25px 30px;
@@ -604,6 +683,49 @@ footer li:hover {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.new-color {
+  color: #ea5297;
+}
+
+.fristInfo {
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.up-arrow {
+  padding: 14px 15px;
+  background: #ea5297;
+}
+
+.arrow-reverse {
+  transform: rotate(180deg);
+}
+
+.floating-banner {
+  background-color: #ffebeb;
+  left: 45%;
+  transform: translateX(-40%);
+  bottom: 6%;
+}
+.floating-banner .floating-content-container {
+  padding: 40px;
+}
+.floating-banner .floating-content-container h3 {
+  font-size: 28px;
+  line-height: 34px;
+  width: 305px;
+}
+.floating-banner .floating-content-container p {
+  width: 305px;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 26px;
+}
+
+.copyright p {
+  color: rgba(28, 28, 28, 0.2);
 }
 
 .custom-title-div {
@@ -657,6 +779,47 @@ footer li:hover {
 }
 
 @media screen and (max-width: 639px) {
+  .accodination-container {
+    margin-top: 4px;
+  }
+  .floating-banner {
+    bottom: 3%;
+    width: 300px;
+    left: 45%;
+    transform: translateX(-45%);
+  }
+  .floating-banner .floating-content-container {
+    padding: 20px;
+  }
+  .floating-banner .floating-content-container h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .floating-banner .floating-content-container h3,
+  .floating-banner .floating-content-container p {
+    width: auto;
+  }
+  .floating-banner .floating-content-container p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .copyright {
+    padding: 15px;
+  }
+  .copyright p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .acodination-actual {
+    padding: 20px;
+  }
+  .mobile-accodination {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+  .accodination-dropdown {
+    padding: 20px;
+  }
   .custom-title-div {
     width: auto;
   }
@@ -673,16 +836,21 @@ footer li:hover {
     font-size: 22px;
     line-height: 30px;
   }
-  .Custom-btn {
-    font-size: 12px;
-    line-height: 14px;
+  footer .white-footer {
+    padding: 60px 15px;
   }
-  .floating-banner {
-    padding-right: 0;
+  footer .acodination-actual {
+    padding: 20px 20px 10px;
+  }
+  .new-btn {
+    padding: 16px 25px;
   }
 }
 @media screen and (max-width: 1535px) {
   .custom-title-div {
+    width: auto;
+  }
+  .ceo-saying {
     width: auto;
   }
   .level-para {
@@ -690,6 +858,12 @@ footer li:hover {
   }
   .clint-say {
     width: auto;
+  }
+  .ceo-background {
+    padding: 0 0 50px;
+  }
+  footer li {
+    text-align: left;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 767px) {
@@ -699,14 +873,46 @@ footer li:hover {
   .custom-title-div p {
     margin-top: 10px;
   }
+  .floating-banner {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4%;
+  }
+  .floating-banner .floating-content-container h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .floating-banner .floating-content-container p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .copyright {
+    padding: 20px;
+  }
+  footer .white-footer {
+    padding: 60px 15px;
+  }
+  footer .acodination-actual {
+    padding: 20px 20px 10px;
+  }
+  .mobile-accodination {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+  .accodination-container {
+    margin-top: 20px;
+  }
+  .acodination-actual,
+  .accodination-dropdown {
+    padding: 20px;
+  }
   .level-product {
-    padding: 60px 10px 610px;
+    padding: 60px 10px 430px;
     margin-left: 15px !important;
     margin-right: 15px !important;
   }
-  .Custom-btn {
-    font-size: 14px;
-    line-height: 16px;
+  .floating-banner {
+    bottom: 0;
   }
   .product-menction {
     margin-top: 20px;
@@ -716,9 +922,100 @@ footer li:hover {
   .new-btn {
     padding: 15px 50px;
   }
+  .floating-banner {
+    bottom: -2%;
+  }
+  .floating-banner .floating-content-container h3 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  footer .white-footer {
+    padding: 60px 15px;
+  }
+  footer .acodination-actual {
+    padding: 20px 20px 10px;
+  }
+  .copyright {
+    padding: 20px;
+  }
+  .pink-footer {
+    padding: 60px 15px;
+  }
+  .mobile-accodination {
+    margin-top: 60px;
+    padding: 0 15px;
+  }
+  .accodination-container {
+    margin-top: 20px;
+  }
+  .acodination-actual,
+  .accodination-dropdown {
+    padding: 20px;
+  }
+  .actual-container {
+    padding: 60px 10px 10px;
+    margin: 0 5px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .new-btn {
     padding: 15px 18px;
+  }
+  .floating-banner {
+    bottom: 5%;
+    left: 5%;
+    transform: translateX(0%);
+  }
+  .floating-banner .floating-content-container {
+    padding: 20px;
+    gap: 20px;
+  }
+  .floating-banner .floating-content-container h3 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .floating-banner .floating-content-container p {
+    font-size: 14px;
+    margin-top: 6px;
+    line-height: 20px;
+  }
+  .content-box-makeup {
+    padding-bottom: 20px;
+  }
+  .pink-footer,
+  .white-footer {
+    padding: 60px 20px;
+  }
+  .copyright {
+    padding: 20px;
+  }
+  .mobile-accodination {
+    margin-top: 60px;
+    padding: 0 40px;
+  }
+  .accodination-container {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 389px) {
+  .Custom-btn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .ceo-saying {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .accodination-dropdown li {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  footer p {
+    font-size: 12px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style-scss.css.map */

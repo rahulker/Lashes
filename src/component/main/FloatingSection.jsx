@@ -6,7 +6,7 @@ const FloatingSection = () => {
   return (
     <section className="floating-bg">
       <div className="floating-div-container relative">
-        <div className="mt-10 flex items-center floating-banner new-floating-banner text-left gap-10 absolute">
+        <div className="mt-10 flex items-center flex-col floating-banner new-floating-banner text-left gap-10 absolute">
           <img src={PathImage.bannerImage} />
           <div>
             <h3 className="custom-title">

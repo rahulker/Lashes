@@ -5,7 +5,7 @@ const SampleMakeUp = () => {
   return (
     <section className="marging new-marging">
       <div className="makeup-container items-center">
-        <div>
+        <div className="content-box-makeup">
           <h2 className="custom-title">
             Deine Treue zahlt sich aus. <br />
             <span>Jetzt mit dem Vorteilsprogramm von Miss Lashes sparen!</span>
@@ -19,9 +19,14 @@ const SampleMakeUp = () => {
           <img
             src={PathImage.halfMiniLogo}
             alt="half mini logo"
-            className="mt-5"
+            className="mt-5 hidden lg:inline-block"
           />
-          <div className="mt-10 grid grid-cols-2 gap-5">
+          <img
+            src={PathImage.miniLogo}
+            alt="half mini logo"
+            className="mt-5 lg:hidden mx-auto"
+          />
+          <div className="lg:mt-10 mt-5 grid sm:grid-cols-2 grid-cols-1 lg:gap-5 gap-2.5 w-fit mx-auto sm:gap-x-20 sm:gap-y-10 md:grid-cols-3 md:gap-x-8 md:gap-y-8 md:mt-10 lg:grid-cols-2 lg:mx-0">
             <ProductDetails
               imgContent={PathImage.CrownIcon}
               FristPara="Hochwertige und"
@@ -48,12 +53,19 @@ const SampleMakeUp = () => {
               SecondPara="Vorteilsprogramm"
             />
           </div>
-          <div className="mt-10">
+          <div className="lg:mt-10 mt-5 w-fit mx-auto hidden  lg:inline-block">
             <CustomButton text="Jetzt registrieren & Rabatte sichern" />
+          </div>
+          <div className="lg:mt-10 mt-5 w-fit mx-auto lg:hidden md:mt-8">
+            <CustomButton text="Jetzt als Kosmetikstudio registrieren" />
           </div>
         </div>
         <div>
-          <img src={PathImage.makeUpSample} />
+          <img
+            src={PathImage.makeUpSample}
+            alt="make up sample"
+            className="w-3/4 sm:w-1/2 markup-image lg:w-full mx-auto"
+          />
         </div>
       </div>
     </section>

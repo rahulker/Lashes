@@ -40,7 +40,7 @@ const SwiperSlideItem = ({ clintImage, clintName, clintSaying, clintDate }) => {
           />
         </button>
       </div>
-      <img className="mt-5" alt="verified" src={PathImage.vrified} />
+      <img className="mt-5 w-full" alt="verified" src={PathImage.vrified} />
     </div>
   );
 };

@@ -8,18 +8,39 @@ const AccodinationSection = ({
   isActiveSection,
   setActiveIndex,
   sectionIndex,
+  BorderThere,
+  colorTitle,
 }) => {
   const toggleSection = () => {
     const nextIndex = isActiveSection ? null : sectionIndex;
     setActiveIndex(nextIndex);
   };
+  const hasData = (section) => {
+    section.title ||
+      section.title2 ||
+      section.listOneA ||
+      section.listTwoA ||
+      section.listThreeA ||
+      section.listFourA ||
+      section.listFiveA ||
+      section.ImageOne ||
+      section.ImageTwo ||
+      section.ImageThree ||
+      section.ImageFour ||
+      section.ImageFive ||
+      section.ImageSix ||
+      section.NestImageTwo;
+    section.NestImageOne;
+  };
+
+  hasData(!section);
   return (
     <div>
       <div
-        className="acodination-actual border mt-5 flex justify-between items-center"
+        className={`acodination-actual ${BorderThere} lg:mt-5 flex justify-between items-start`}
         onClick={toggleSection}
       >
-        <h3> {section.title} </h3>
+        {section.title && <h3> {section.title} </h3>}
         <FontAwesomeIcon
           icon={faPlus}
           className={`${isActiveSection ? "cross-arrow" : ""}`}
@@ -31,28 +52,110 @@ const AccodinationSection = ({
             className="flex items-center justify-between"
             onClick={toggleSection}
           >
-            <p className="fristInfo">{section.title2}</p>
+            {section.title2 && (
+              <h3 style={{ color: "#" + colorTitle }}> {section.title2} </h3>
+            )}
             <FontAwesomeIcon icon={faMinus} style={{ color: "ea5297" }} />
           </div>
           <div className="mt-2.5 accodination-para">
-            <p className="">{section.para}</p>
-            <ul>
-              <li className="list-disc list-inside">{section.listOneA}</li>
-              <li className="list-disc list-inside">{section.listTwoA}</li>
-              <li className="list-disc list-inside">{section.listThreeA}</li>
-              <li className="list-disc list-inside">{section.listFourA}</li>
-              <li className="list-disc list-inside">{section.listFiveA}</li>
+            {section.para && <p> {section.para} </p>}
+            <ul className="mt-1">
+              {section.listOneA && (
+                <li className="list-disc list-inside">{section.listOneA}</li>
+              )}
+              {section.listTwoA && (
+                <li className="list-disc list-inside">{section.listTwoA}</li>
+              )}
+              {section.listThreeA && (
+                <li className="list-disc list-inside">{section.listThreeA}</li>
+              )}
+              {section.listFourA && (
+                <li className="list-disc list-inside">{section.listFourA}</li>
+              )}
+              {section.listFiveA && (
+                <li className="list-disc list-inside">{section.listFiveA}</li>
+              )}
             </ul>
+            <div className="grid grid-cols-3 gap-5">
+              {section.ImageOne && (
+                <img
+                  src={section.ImageOne}
+                  alt="footer image"
+                  className="w-auto"
+                />
+              )}
+              {section.ImageTwo && (
+                <img
+                  src={section.ImageTwo}
+                  alt="footer image"
+                  className="w-auto"
+                />
+              )}
+              {section.ImageThree && (
+                <img
+                  src={section.ImageThree}
+                  alt="footer image"
+                  className="w-auto"
+                />
+              )}
+              {section.ImageFour && (
+                <img
+                  src={section.ImageFour}
+                  alt="footer image"
+                  className="w-auto"
+                />
+              )}
+              {section.ImageFive && (
+                <img
+                  src={section.ImageFive}
+                  alt="footer image"
+                  className="w-auto"
+                />
+              )}
+              {section.ImageSix && (
+                <img
+                  src={section.ImageSix}
+                  alt="footer image"
+                  className="w-auto"
+                />
+              )}
+
+              <div className="flex items-start gap-5">
+                {section.NestImageOne && (
+                  <img
+                    src={section.NestImageOne}
+                    alt="footer image"
+                    className="w-auto"
+                  />
+                )}
+                <div>
+                  {section.NestImageTwo && (
+                    <img
+                      src={section.NestImageTwo}
+                      alt="footer image"
+                      className="w-auto"
+                    />
+                  )}
+                  {section.NestImageTwo && (
+                    <img
+                      src={section.NestImageTwo}
+                      alt="footer image"
+                      className="w-auto"
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       )}
     </div>
   );
 };
-const Accodination = ({ section }) => {
+const Accodination = ({ section, borderNew, colorTitle }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div>
+    <div className="flex flex-col gap-5 lg:block">
       {section.map((section, index) => (
         <AccodinationSection
           section={section}
@@ -60,6 +163,8 @@ const Accodination = ({ section }) => {
           isActiveSection={index === activeIndex}
           setActiveIndex={setActiveIndex}
           sectionIndex={index}
+          BorderThere={borderNew}
+          colorTitle={colorTitle}
         />
       ))}
     </div>
@@ -67,11 +172,15 @@ const Accodination = ({ section }) => {
 };
 Accodination.propTypes = {
   section: PropTypes.any,
+  borderNew: PropTypes.string,
+  colorTitle: PropTypes.any,
 };
 AccodinationSection.propTypes = {
   section: PropTypes.any,
   isActiveSection: PropTypes.bool,
   setActiveIndex: PropTypes.any,
   sectionIndex: PropTypes.any,
+  BorderThere: PropTypes.any,
+  colorTitle: PropTypes.any,
 };
 export default Accodination;

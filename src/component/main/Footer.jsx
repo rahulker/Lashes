@@ -1,4 +1,7 @@
+import footerInfo from "../../constant/footerAccodination";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faSquareFacebook,
   faYoutube,
@@ -8,25 +11,26 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import PathImage from "../../constant/imagePath";
+import Accodination from "../custom/Accodination";
 const Footer = () => {
   return (
     <footer>
-      <div className="grid grid-cols-2 items-center h-full">
-        <div className="pink-footer h-full">
+      <div className="grid lg:grid-cols-2 grid-cols-1 items-center h-full">
+        <div className="pink-footer h-full text-center lg:text-left">
           <h4>Newsletter</h4>
           <p className="mt-2.5">
             Melde dich bei unserem kostenlosen Newsletter an, erhalte einen 10%
             Gutscheincode und profitiere von exklusiven Rabatten und
             interessanten Neuigkeiten!
           </p>
-          <div className="mt-10 grid grid-cols-2 gap-2.5">
+          <div className="mt-10 flex lg:grid grid-cols-2 items-center justify-center gap-2.5 flex-wrap">
             <input
               name="email"
               id="email"
-              className="bg-white py-2.5 px-5"
+              className="bg-white py-2.5 px-5 rounded-md "
               placeholder="Deine E-Mail Adresse"
             />
-            <button className="text-white Custom-btn footer-btn ">
+            <button className="text-white Custom-btn footer-btn w-fit">
               Anmelden
             </button>
           </div>
@@ -34,7 +38,7 @@ const Footer = () => {
             Die <span className="underline">Datenschutzbestimmungen </span>habe
             ich zur Kenntnis genommen
           </p>
-          <div className="social-icon flex items-center">
+          <div className="social-icon flex justify-center lg:justify-start items-center flex-wrap">
             <a href="https://www.facebook.com/">
               <FontAwesomeIcon
                 icon={faSquareFacebook}
@@ -64,7 +68,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="white-footer h-full">
+        <div className="white-footer h-full hidden lg:block">
           <div className="grid grid-cols-2 justify-between gap-y-10">
             {/* 1 */}
             <div>
@@ -125,7 +129,7 @@ const Footer = () => {
             {/* 4 */}
             <div>
               <h4>Versenden</h4>
-              <div className="flex items-center gap-1.5 mt-1.5">
+              <div className="flex items-center gap-1.5 mt-1.5 justify-between">
                 <img src={PathImage.gls} alt="gls" />
                 <div className="flex flex-col items-center gap-1.5">
                   <img src={PathImage.dhl} alt="dhl" />
@@ -134,6 +138,29 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="white-footer lg:hidden">
+          <Accodination
+            section={footerInfo}
+            colorTitle="1c1c1c"
+            borderNew="border-b"
+          />
+        </div>
+      </div>
+      <div className="marging copyright py-5">
+        <div className="flex items-center text-left justify-between">
+          <p>
+            © Copyright 2022 Etabliertes Beauty- & Lifestyleunternehmen auf
+            Lashextensions spezialisiert.
+          </p>
+          <button
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="transition-all up-arrow rounded-md"
+          >
+            <FontAwesomeIcon icon={faArrowUp} style={{ color: "#fff" }} />
+          </button>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ const LevelCards = ({
   hiddenOrShow2,
 }) => {
   return (
-    <div className="level-cards text-left w-fit">
+    <div className="level-cards text-left w-fit mx-auto ">
       <img src={imgContent} alt="level of product quality" />
       {/* content of card */}
       <div className="mt-5 flex flex-col gap-2.5">
