@@ -6,6 +6,17 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  svg {
+    color: #fff;
+  }
+  &:hover {
+    transition: 0.2s;
+    background-color: white;
+    color: $dark-text;
+    svg {
+      color: $dark-text;
+    }
+  }
 }
 .new-color {
   color: $pink-text;
@@ -26,11 +37,10 @@
 }
 .floating-banner {
   background-color: $banner-color;
-  left: 45%;
-  transform: translateX(-40%);
-  bottom: 6%;
+  bottom: -40px;
   .floating-content-container {
     padding: 40px;
+    gap: 102px;
     h3 {
       font-size: 28px;
       line-height: 34px;
@@ -100,17 +110,44 @@
 .new-floating-banner {
   bottom: -28px;
 }
-
+@media screen and (max-width: 1535px) {
+  .custom-title-div {
+    width: auto;
+  }
+  .ceo-saying {
+    width: auto;
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .level-para {
+    padding: 0;
+  }
+  .clint-say {
+    width: auto;
+  }
+  .ceo-background {
+    padding: 0 0 50px;
+  }
+  footer {
+    li {
+      text-align: left;
+    }
+  }
+}
 @media screen and (max-width: 639px) {
   .accodination-container {
     margin-top: 4px;
   }
+  .Custom-btn {
+    padding: 18px 26px !important;
+  }
   .floating-banner {
-    bottom: 3%;
+    bottom: -110px;
     width: 300px;
-    left: 45%;
-    transform: translateX(-45%);
+    left: 50%;
+    transform: translateX(-50%);
     .floating-content-container {
+      gap: 20px;
       padding: 20px;
       h3 {
         font-size: 20px;
@@ -172,28 +209,7 @@
     padding: 16px 25px;
   }
 }
-@media screen and (max-width: 1535px) {
-  .custom-title-div {
-    width: auto;
-  }
-  .ceo-saying {
-    width: auto;
-  }
-  .level-para {
-    padding: 0;
-  }
-  .clint-say {
-    width: auto;
-  }
-  .ceo-background {
-    padding: 0 0 50px;
-  }
-  footer {
-    li {
-      text-align: left;
-    }
-  }
-}
+
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .custom-title-div {
     width: auto;
@@ -204,8 +220,10 @@
   .floating-banner {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4%;
+    bottom: -150px;
     .floating-content-container {
+      gap: 20px;
+
       h3 {
         font-size: 24px;
         line-height: 28px;
@@ -239,12 +257,9 @@
     padding: 20px;
   }
   .level-product {
-    padding: 60px 10px 430px;
+    padding: 60px 10px 365px;
     margin-left: 15px !important;
     margin-right: 15px !important;
-  }
-  .floating-banner {
-    bottom: 0;
   }
   .product-menction {
     margin-top: 20px;
@@ -256,7 +271,11 @@
   }
   .floating-banner {
     bottom: -2%;
+    bottom: -160px;
+    left: 50%;
+    transform: translateX(-50%);
     .floating-content-container {
+      gap: 20px;
       h3 {
         font-size: 26px;
         line-height: 28px;
@@ -298,13 +317,16 @@
   .new-btn {
     padding: 15px 18px;
   }
+  .floating-banner-btn {
+    padding: 18px 25px !important;
+  }
   .floating-banner {
-    bottom: 5%;
-    left: 5%;
-    transform: translateX(0%);
+    bottom: -145px;
+    left: 50%;
+    transform: translateX(-50%);
     .floating-content-container {
       padding: 20px;
-      gap: 20px;
+      gap: 10px;
       h3 {
         font-size: 24px;
         line-height: 26px;

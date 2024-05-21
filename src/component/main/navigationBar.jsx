@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 const NavigationBar = () => {
   const [active, setActive] = useState(false);
-
+  let bodyHtml = document.getElementById("body");
   const updateMenu = () => {
+    bodyHtml.classList.toggle("notScroll");
     setActive(!active);
   };
   return (
@@ -14,19 +15,19 @@ const NavigationBar = () => {
       <nav className="hidden xl:block">
         <div className="flex justify-center items-center">
           {/* 1 */}
-          <div className="px-5 py-3 border-r border-solid border-l w-fit border-navbar border-b border-b-white border-b-collapse">
+          <div className="px-5 py-3 border-r border-solid  border-l w-fit border-navbar border-b border-b-white border-b-collapse">
             <img src={PathImage.lashes} alt="miss lashes" />
           </div>
           {/* 2 */}
-          <div className="px-5 py-3.5 border-r border-solid w-fit">
+          <div className="px-5 py-3.5 border-r border-solid cursor-pointer w-fit">
             <img src={PathImage.lumina} alt="miss lumina" />
           </div>
           {/* 3 */}
-          <div className="px-5 py-3 border-r border-solid w-fit">
+          <div className="px-5 py-3 border-r border-solid cursor-pointer w-fit">
             <img src={PathImage.brows} alt="miss brows" />
           </div>
           {/* 4 */}
-          <div className="px-5 py-3 border-r border-solid w-fit">
+          <div className="px-5 py-3 border-r border-solid cursor-pointer w-fit">
             <img src={PathImage.Skin} alt="bb skin" />
           </div>
         </div>
@@ -55,7 +56,7 @@ const NavigationBar = () => {
             </div>
           </div>
           <div>
-            <ul className="mt-5 flex items-center">
+            <ul className="mt-5 flex items-center hover-effect">
               <NavItems
                 ItemText="Sets"
                 paddingL="0"
@@ -146,15 +147,75 @@ const NavigationBar = () => {
             <ul className="flex items-center justify-center flex-col ">
               <NavItems
                 ItemText="Sets"
-                paddingL="0"
+                paddingL="20px"
                 paddingR="20px"
                 borderPara="b"
               />
               <NavItems
-                ItemText="Sets"
-                paddingL="0"
+                ItemText="Lashes"
+                paddingL="20px"
                 paddingR="20px"
                 borderPara="b"
+              />
+              <NavItems
+                ItemText="Pinzetten"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Kleber"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Lifting"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Waxing"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Farben"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Pflege & Zubehör"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Schulungen"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Einrichtung"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Outlet"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="b"
+              />
+              <NavItems
+                ItemText="Adventskalender"
+                paddingL="20px"
+                paddingR="20px"
+                borderPara="none"
               />
             </ul>
           </div>

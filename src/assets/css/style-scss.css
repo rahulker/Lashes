@@ -27,6 +27,10 @@
   }
 }
 
+.floating-banner-btn {
+  padding: 25px 65px !important;
+}
+
 .container-div {
   width: 1920px;
   margin-left: auto;
@@ -129,6 +133,7 @@ button {
     width: 100%;
     background-color: #ea5297;
     left: -100%;
+    height: 1000vh;
     top: 59px;
     transition: 0.2s;
   }
@@ -145,7 +150,7 @@ button {
   }
 }
 .image-trio {
-  margin-top: 60px;
+  margin-top: 60px !important;
 }
 
 .header-l-image {
@@ -419,8 +424,8 @@ footer li:hover {
   }
   .ceo-saying {
     width: auto;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 16px !important;
+    line-height: 28px !important;
   }
   .product-list {
     margin: 60px 15px !important;
@@ -442,7 +447,7 @@ footer li:hover {
     margin-top: 40px;
   }
   .level-product {
-    padding: 60px 10px 490px;
+    padding: 60px 10px 330px;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
@@ -494,8 +499,8 @@ footer li:hover {
     margin: 0 5px;
   }
   .ceo-saying {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 16px !important;
+    line-height: 28px !important;
   }
   .product-container {
     padding: 106px 15px 96px;
@@ -531,8 +536,8 @@ footer li:hover {
     padding: 60px 15px;
   }
   .ceo-saying {
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 18px !important;
+    line-height: 28px !important;
   }
   .makeup-container {
     grid-template-columns: auto;
@@ -606,13 +611,13 @@ footer li:hover {
     padding: 20px 30px;
   }
   .ceo-saying {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18px !important;
+    line-height: 26px !important;
   }
   .level-product {
-    padding: 60px 10px 225px;
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    padding: 60px 20px 320px;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
   }
   .image-trio {
     margin-top: 40px !important;
@@ -643,10 +648,12 @@ footer li:hover {
     margin-left: 40px !important;
     margin-right: 40px !important;
   }
-  .floating-banner {
-    left: 15% !important;
-    transform: translateX(0) !important;
-    bottom: 6% !important;
+  .floating-banner .floating-content-container {
+    padding: 30px !important;
+    gap: 40px !important;
+  }
+  .floating-banner .floating-banner-btn {
+    padding: 25px 30px !important;
   }
   .content-box-makeup {
     padding-bottom: 30px;
@@ -676,6 +683,20 @@ footer li:hover {
     gap: 60px;
   }
 }
+.mobile-nav li:hover {
+  color: #1c1c1c;
+  transition: 0.2s;
+}
+
+.hover-effect li:hover {
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
+.notScroll {
+  overflow: hidden;
+}
+
 .Custom-btn {
   background: #ea5297 !important;
   padding: 25px 30px;
@@ -683,6 +704,17 @@ footer li:hover {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+.Custom-btn svg {
+  color: #fff;
+}
+.Custom-btn:hover {
+  transition: 0.2s;
+  background-color: white;
+  color: #1c1c1c;
+}
+.Custom-btn:hover svg {
+  color: #1c1c1c;
 }
 
 .new-color {
@@ -705,12 +737,11 @@ footer li:hover {
 
 .floating-banner {
   background-color: #ffebeb;
-  left: 45%;
-  transform: translateX(-40%);
-  bottom: 6%;
+  bottom: -40px;
 }
 .floating-banner .floating-content-container {
   padding: 40px;
+  gap: 102px;
 }
 .floating-banner .floating-content-container h3 {
   font-size: 28px;
@@ -778,17 +809,43 @@ footer li:hover {
   bottom: -28px;
 }
 
+@media screen and (max-width: 1535px) {
+  .custom-title-div {
+    width: auto;
+  }
+  .ceo-saying {
+    width: auto;
+    font-size: 23px;
+    line-height: 40px;
+  }
+  .level-para {
+    padding: 0;
+  }
+  .clint-say {
+    width: auto;
+  }
+  .ceo-background {
+    padding: 0 0 50px;
+  }
+  footer li {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 639px) {
   .accodination-container {
     margin-top: 4px;
   }
+  .Custom-btn {
+    padding: 18px 26px !important;
+  }
   .floating-banner {
-    bottom: 3%;
+    bottom: -110px;
     width: 300px;
-    left: 45%;
-    transform: translateX(-45%);
+    left: 50%;
+    transform: translateX(-50%);
   }
   .floating-banner .floating-content-container {
+    gap: 20px;
     padding: 20px;
   }
   .floating-banner .floating-content-container h3 {
@@ -846,26 +903,6 @@ footer li:hover {
     padding: 16px 25px;
   }
 }
-@media screen and (max-width: 1535px) {
-  .custom-title-div {
-    width: auto;
-  }
-  .ceo-saying {
-    width: auto;
-  }
-  .level-para {
-    padding: 0;
-  }
-  .clint-say {
-    width: auto;
-  }
-  .ceo-background {
-    padding: 0 0 50px;
-  }
-  footer li {
-    text-align: left;
-  }
-}
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .custom-title-div {
     width: auto;
@@ -876,7 +913,10 @@ footer li:hover {
   .floating-banner {
     left: 50%;
     transform: translateX(-50%);
-    bottom: 4%;
+    bottom: -150px;
+  }
+  .floating-banner .floating-content-container {
+    gap: 20px;
   }
   .floating-banner .floating-content-container h3 {
     font-size: 24px;
@@ -907,12 +947,9 @@ footer li:hover {
     padding: 20px;
   }
   .level-product {
-    padding: 60px 10px 430px;
+    padding: 60px 10px 365px;
     margin-left: 15px !important;
     margin-right: 15px !important;
-  }
-  .floating-banner {
-    bottom: 0;
   }
   .product-menction {
     margin-top: 20px;
@@ -924,6 +961,12 @@ footer li:hover {
   }
   .floating-banner {
     bottom: -2%;
+    bottom: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .floating-banner .floating-content-container {
+    gap: 20px;
   }
   .floating-banner .floating-content-container h3 {
     font-size: 26px;
@@ -961,14 +1004,17 @@ footer li:hover {
   .new-btn {
     padding: 15px 18px;
   }
+  .floating-banner-btn {
+    padding: 18px 25px !important;
+  }
   .floating-banner {
-    bottom: 5%;
-    left: 5%;
-    transform: translateX(0%);
+    bottom: -145px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .floating-banner .floating-content-container {
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
   }
   .floating-banner .floating-content-container h3 {
     font-size: 24px;

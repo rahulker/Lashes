@@ -18,11 +18,8 @@ const MobileProductSwiper = () => {
     <>
       <Swiper
         spaceBetween={50}
-        slidesPerView={5}
+        slidesPerView={1.48}
         breakpoints={{
-          320: {
-            slidesPerView: 1.48,
-          },
           640: {
             slidesPerView: 2,
           },

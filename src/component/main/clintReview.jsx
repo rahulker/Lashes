@@ -34,13 +34,10 @@ const ClintReview = () => {
         <div className="swiper-container">
           <Swiper
             spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={1}
             autoplay={{ delay: 2000 }}
             loop
             breakpoints={{
-              320: {
-                slidesPerView: 1,
-              },
               640: {
                 slidesPerView: 2,
               },

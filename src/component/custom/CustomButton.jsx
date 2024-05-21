@@ -6,7 +6,7 @@ const CustomButton = ({ text }) => {
     <>
       <button className="text-white Custom-btn flex items-center gap-2.5">
         {text}
-        <FontAwesomeIcon icon={faArrowRight} style={{ color: "#fff" }} />
+        <FontAwesomeIcon icon={faArrowRight} />
       </button>
     </>
   );
