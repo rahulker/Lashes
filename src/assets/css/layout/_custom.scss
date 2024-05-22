@@ -18,6 +18,15 @@
     }
   }
 }
+.floating-banner {
+  img {
+    width: 400px;
+    margin: auto;
+  }
+}
+.new-floating-section {
+  bottom: 44px !important;
+}
 .new-color {
   color: $pink-text;
 }
@@ -30,6 +39,13 @@
 .up-arrow {
   padding: 14px 15px;
   background: $pink-text;
+  svg {
+    color: #fff;
+    &:hover {
+      transition: 0.2s;
+      color: $dark-text;
+    }
+  }
 }
 
 .arrow-reverse {
@@ -37,20 +53,22 @@
 }
 .floating-banner {
   background-color: $banner-color;
-  bottom: -40px;
+  bottom: -88px;
   .floating-content-container {
     padding: 40px;
-    gap: 102px;
+    gap: 40px;
     h3 {
       font-size: 28px;
       line-height: 34px;
       width: 305px;
+      margin: auto;
     }
     p {
       width: 305px;
       font-size: 16px;
       margin-top: 10px;
       line-height: 26px;
+      margin: auto;
     }
   }
 }
@@ -107,13 +125,11 @@
   transform: rotate(44deg);
 }
 
-.new-floating-banner {
-  bottom: -28px;
-}
 @media screen and (max-width: 1535px) {
   .custom-title-div {
     width: auto;
   }
+
   .ceo-saying {
     width: auto;
     font-size: 23px;
@@ -138,14 +154,15 @@
   .accodination-container {
     margin-top: 4px;
   }
+  .floating-banner {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .Custom-btn {
     padding: 18px 26px !important;
   }
   .floating-banner {
-    bottom: -110px;
-    width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: fit-content;
     .floating-content-container {
       gap: 20px;
       padding: 20px;
@@ -161,6 +178,17 @@
         font-size: 12px;
         line-height: 18px;
       }
+    }
+  }
+  .floating-bg {
+    .floating-div-container {
+      padding: 132px 15px !important;
+    }
+  }
+  .new-floating-section {
+    bottom: 188px !important  ;
+    .main-conent {
+      padding: 30px !important;
     }
   }
   .copyright {
@@ -217,10 +245,17 @@
       margin-top: 10px;
     }
   }
+  .new-floating-section {
+    bottom: 250px !important;
+    .floating-content-container {
+      padding: 20px;
+    }
+  }
   .floating-banner {
     left: 50%;
+    width: fit-content;
     transform: translateX(-50%);
-    bottom: -150px;
+    bottom: -88px;
     .floating-content-container {
       gap: 20px;
 
@@ -232,6 +267,14 @@
         font-size: 14px;
         line-height: 22px;
       }
+    }
+  }
+  .floating-bg {
+    .floating-banner {
+      bottom: -102px;
+    }
+    .floating-div-container {
+      padding: 120px 100px;
     }
   }
   .copyright {
@@ -257,7 +300,7 @@
     padding: 20px;
   }
   .level-product {
-    padding: 60px 10px 365px;
+    padding: 60px 10px 0;
     margin-left: 15px !important;
     margin-right: 15px !important;
   }
@@ -270,8 +313,9 @@
     padding: 15px 50px;
   }
   .floating-banner {
-    bottom: -2%;
-    bottom: -160px;
+    bottom: -88px;
+    width: fit-content;
+
     left: 50%;
     transform: translateX(-50%);
     .floating-content-container {
@@ -280,6 +324,17 @@
         font-size: 26px;
         line-height: 28px;
       }
+    }
+  }
+  .floating-bg {
+    .floating-banner {
+      bottom: 250px !important;
+    }
+    .floating-div-container {
+      padding: 120px 184px;
+    }
+    .floating-content-container {
+      padding: 20px;
     }
   }
   footer {
@@ -318,12 +373,10 @@
     padding: 15px 18px;
   }
   .floating-banner-btn {
-    padding: 18px 25px !important;
+    padding: 18px 20px !important;
   }
   .floating-banner {
-    bottom: -145px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -88px;
     .floating-content-container {
       padding: 20px;
       gap: 10px;
@@ -336,6 +389,14 @@
         margin-top: 6px;
         line-height: 20px;
       }
+    }
+  }
+  .floating-bg {
+    .floating-banner {
+      bottom: -90px;
+    }
+    .floating-div-container {
+      padding: 0 40px;
     }
   }
   .content-box-makeup {

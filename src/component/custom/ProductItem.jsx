@@ -7,7 +7,7 @@ const ProductItem = ({ imageContent, productTitle }) => {
       <img src={imageContent} />
       <div className="product-text flex justify-between items-center">
         <p className="font-bold">{productTitle}</p>
-        <FontAwesomeIcon icon={faArrowRightLong} style={{ color: "#f3f3f3" }} />
+        <FontAwesomeIcon icon={faArrowRightLong} />
       </div>
     </div>
   );

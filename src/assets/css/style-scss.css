@@ -13,6 +13,17 @@
   font-family: Helvetica;
 }
 
+.nav-padding {
+  padding: 20px 370px;
+}
+
+.grind-banner {
+  grid-template-columns: 400px 780px;
+}
+.grind-banner .floating-content-container {
+  grid-template-columns: 380px auto;
+}
+
 .marging {
   margin: auto 370px;
 }
@@ -117,6 +128,12 @@ button {
   width: 940px;
   padding: 10px 40px;
 }
+.input-search::-moz-placeholder {
+  color: #1c1c1c;
+}
+.input-search::placeholder {
+  color: #1c1c1c;
+}
 
 ::-moz-placeholder {
   color: #1c1c1c;
@@ -201,7 +218,7 @@ button {
 }
 
 .level-product {
-  padding: 110px 100px 258px;
+  padding: 110px 100px 40px;
   margin: auto 270px !important;
 }
 
@@ -218,7 +235,7 @@ button {
 }
 
 .quality-level-list li {
-  list-style: disc inside;
+  list-style: disc outside;
   font-size: 14px;
 }
 .quality-level-list li::marker {
@@ -236,6 +253,9 @@ button {
 .product-text {
   background: #f3f3f3;
   padding: 20px;
+}
+.product-text svg {
+  color: rgba(28, 28, 28, 0.2);
 }
 
 .pink-background {
@@ -325,7 +345,8 @@ button {
   margin: 160px 0 120px;
 }
 .floating-bg .floating-div-container {
-  padding: 65px 370px;
+  padding: 0 370px;
+  height: 130px;
 }
 
 .makeup-container {
@@ -371,6 +392,12 @@ footer li:hover {
   margin-top: 60px;
   gap: 30px;
 }
+.social-icon svg {
+  color: #ea5297;
+}
+.social-icon svg:hover {
+  color: #1c1c1c;
+}
 
 .selection-bg {
   background-color: #f3f3f3;
@@ -387,6 +414,9 @@ footer li:hover {
   }
   .social-icon {
     margin-top: 40px;
+  }
+  .quality-level-list li {
+    list-style: inside;
   }
   footer {
     text-align: center;
@@ -447,7 +477,7 @@ footer li:hover {
     margin-top: 40px;
   }
   .level-product {
-    padding: 60px 10px 330px;
+    padding: 60px 10px 0;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
@@ -480,6 +510,9 @@ footer li:hover {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .clint-review {
     padding: 60px 15px;
+  }
+  .quality-level-list li {
+    list-style: inside;
   }
   .makeup-container {
     grid-template-columns: auto;
@@ -535,9 +568,22 @@ footer li:hover {
   .clint-review {
     padding: 60px 15px;
   }
+  .quality-level-list li {
+    list-style: inside;
+  }
   .ceo-saying {
     font-size: 18px !important;
     line-height: 28px !important;
+  }
+  .grind-banner {
+    bottom: -180px !important;
+    grid-template-columns: auto;
+  }
+  .grind-banner img {
+    width: 100%;
+  }
+  .grind-banner .floating-content-container {
+    grid-template-columns: auto;
   }
   .makeup-container {
     grid-template-columns: auto;
@@ -547,13 +593,13 @@ footer li:hover {
     gap: 40px;
   }
   .product-list {
-    margin: 80px 15px !important;
+    margin: 80px 15px 0 !important;
   }
   .actual-image-trio img {
     width: 600px;
   }
   .level-product {
-    padding: 60px 10px 360px;
+    padding: 60px 10px 0;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
@@ -596,6 +642,16 @@ footer li:hover {
   .actual-image-trio img {
     width: 70%;
   }
+  .grind-banner {
+    bottom: -150px !important;
+    grid-template-columns: auto auto;
+  }
+  .grind-banner img {
+    width: 100%;
+  }
+  .grind-banner .floating-content-container {
+    grid-template-columns: auto auto;
+  }
   .makeup-container {
     grid-template-columns: auto auto;
     margin-top: 60px;
@@ -615,7 +671,7 @@ footer li:hover {
     line-height: 26px !important;
   }
   .level-product {
-    padding: 60px 20px 320px;
+    padding: 60px 20px 0;
     margin-left: 20px !important;
     margin-right: 20px !important;
   }
@@ -644,22 +700,22 @@ footer li:hover {
 }
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .level-product {
-    padding: 110px 80px 225px;
+    padding: 110px 80px 40px;
     margin-left: 40px !important;
     margin-right: 40px !important;
+  }
+  .floating-bg .floating-div-container {
+    padding: 0 100px;
   }
   .floating-banner .floating-content-container {
     padding: 30px !important;
     gap: 40px !important;
   }
   .floating-banner .floating-banner-btn {
-    padding: 25px 30px !important;
+    padding: 25px 46px !important;
   }
   .content-box-makeup {
     padding-bottom: 30px;
-  }
-  .markup-image {
-    margin-bottom: -30px;
   }
   .actual-container {
     padding: 60px 20px 20px;
@@ -688,6 +744,13 @@ footer li:hover {
   transition: 0.2s;
 }
 
+.hover-effect {
+  gap: 3px;
+}
+.hover-effect li {
+  font-size: 14px;
+  line-height: 20px;
+}
 .hover-effect li:hover {
   opacity: 0.4;
   transition: 0.2s;
@@ -695,6 +758,10 @@ footer li:hover {
 
 .notScroll {
   overflow: hidden;
+}
+
+.floating-bg .floating-content-container {
+  gap: 92px;
 }
 
 .Custom-btn {
@@ -717,6 +784,15 @@ footer li:hover {
   color: #1c1c1c;
 }
 
+.floating-banner img {
+  width: 400px;
+  margin: auto;
+}
+
+.new-floating-section {
+  bottom: 44px !important;
+}
+
 .new-color {
   color: #ea5297;
 }
@@ -730,6 +806,13 @@ footer li:hover {
   padding: 14px 15px;
   background: #ea5297;
 }
+.up-arrow svg {
+  color: #fff;
+}
+.up-arrow svg:hover {
+  transition: 0.2s;
+  color: #1c1c1c;
+}
 
 .arrow-reverse {
   transform: rotate(180deg);
@@ -737,22 +820,24 @@ footer li:hover {
 
 .floating-banner {
   background-color: #ffebeb;
-  bottom: -40px;
+  bottom: -88px;
 }
 .floating-banner .floating-content-container {
   padding: 40px;
-  gap: 102px;
+  gap: 40px;
 }
 .floating-banner .floating-content-container h3 {
   font-size: 28px;
   line-height: 34px;
   width: 305px;
+  margin: auto;
 }
 .floating-banner .floating-content-container p {
   width: 305px;
   font-size: 16px;
   margin-top: 10px;
   line-height: 26px;
+  margin: auto;
 }
 
 .copyright p {
@@ -805,10 +890,6 @@ footer li:hover {
   transform: rotate(44deg);
 }
 
-.new-floating-banner {
-  bottom: -28px;
-}
-
 @media screen and (max-width: 1535px) {
   .custom-title-div {
     width: auto;
@@ -835,14 +916,16 @@ footer li:hover {
   .accodination-container {
     margin-top: 4px;
   }
+  .floating-banner {
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .Custom-btn {
     padding: 18px 26px !important;
   }
   .floating-banner {
-    bottom: -110px;
-    width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .floating-banner .floating-content-container {
     gap: 20px;
@@ -859,6 +942,15 @@ footer li:hover {
   .floating-banner .floating-content-container p {
     font-size: 12px;
     line-height: 18px;
+  }
+  .floating-bg .floating-div-container {
+    padding: 132px 15px !important;
+  }
+  .new-floating-section {
+    bottom: 188px !important;
+  }
+  .new-floating-section .main-conent {
+    padding: 30px !important;
   }
   .copyright {
     padding: 15px;
@@ -910,10 +1002,18 @@ footer li:hover {
   .custom-title-div p {
     margin-top: 10px;
   }
+  .new-floating-section {
+    bottom: 250px !important;
+  }
+  .new-floating-section .floating-content-container {
+    padding: 20px;
+  }
   .floating-banner {
     left: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
     transform: translateX(-50%);
-    bottom: -150px;
+    bottom: -88px;
   }
   .floating-banner .floating-content-container {
     gap: 20px;
@@ -925,6 +1025,12 @@ footer li:hover {
   .floating-banner .floating-content-container p {
     font-size: 14px;
     line-height: 22px;
+  }
+  .floating-bg .floating-banner {
+    bottom: -102px;
+  }
+  .floating-bg .floating-div-container {
+    padding: 120px 100px;
   }
   .copyright {
     padding: 20px;
@@ -947,7 +1053,7 @@ footer li:hover {
     padding: 20px;
   }
   .level-product {
-    padding: 60px 10px 365px;
+    padding: 60px 10px 0;
     margin-left: 15px !important;
     margin-right: 15px !important;
   }
@@ -960,8 +1066,9 @@ footer li:hover {
     padding: 15px 50px;
   }
   .floating-banner {
-    bottom: -2%;
-    bottom: -160px;
+    bottom: -88px;
+    width: -moz-fit-content;
+    width: fit-content;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -971,6 +1078,15 @@ footer li:hover {
   .floating-banner .floating-content-container h3 {
     font-size: 26px;
     line-height: 28px;
+  }
+  .floating-bg .floating-banner {
+    bottom: 250px !important;
+  }
+  .floating-bg .floating-div-container {
+    padding: 120px 184px;
+  }
+  .floating-bg .floating-content-container {
+    padding: 20px;
   }
   footer .white-footer {
     padding: 60px 15px;
@@ -1005,12 +1121,10 @@ footer li:hover {
     padding: 15px 18px;
   }
   .floating-banner-btn {
-    padding: 18px 25px !important;
+    padding: 18px 20px !important;
   }
   .floating-banner {
-    bottom: -145px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -88px;
   }
   .floating-banner .floating-content-container {
     padding: 20px;
@@ -1024,6 +1138,12 @@ footer li:hover {
     font-size: 14px;
     margin-top: 6px;
     line-height: 20px;
+  }
+  .floating-bg .floating-banner {
+    bottom: -90px;
+  }
+  .floating-bg .floating-div-container {
+    padding: 0 40px;
   }
   .content-box-makeup {
     padding-bottom: 20px;

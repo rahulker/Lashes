@@ -37,7 +37,7 @@ const AccodinationSection = ({
   return (
     <div>
       <div
-        className={`acodination-actual ${BorderThere} lg:mt-5 flex justify-between items-start`}
+        className={`acodination-actual cursor-pointer ${BorderThere} lg:mt-5 flex justify-between items-start`}
         onClick={toggleSection}
       >
         {section.title && <h3> {section.title} </h3>}
@@ -49,7 +49,7 @@ const AccodinationSection = ({
       {isActiveSection && (
         <div className="accodination-dropdown border mt-5 ">
           <div
-            className="flex items-center justify-between"
+            className="flex items-center justify-between cursor-pointer"
             onClick={toggleSection}
           >
             {section.title2 && (
@@ -76,7 +76,7 @@ const AccodinationSection = ({
                 <li className="list-disc list-inside">{section.listFiveA}</li>
               )}
             </ul>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="flex flex-wrap gap-3">
               {section.ImageOne && (
                 <img
                   src={section.ImageOne}
@@ -120,7 +120,7 @@ const AccodinationSection = ({
                 />
               )}
 
-              <div className="flex items-start gap-5">
+              <div className="md:flex items-center gap-5">
                 {section.NestImageOne && (
                   <img
                     src={section.NestImageOne}
@@ -128,7 +128,7 @@ const AccodinationSection = ({
                     className="w-auto"
                   />
                 )}
-                <div>
+                <div className="mt-5 flex flex-col gap-5">
                   {section.NestImageTwo && (
                     <img
                       src={section.NestImageTwo}

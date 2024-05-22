@@ -5,6 +5,15 @@
   padding: 0;
   font-family: Helvetica;
 }
+.nav-padding {
+  padding: 20px 370px;
+}
+.grind-banner {
+  grid-template-columns: 400px 780px;
+  .floating-content-container {
+    grid-template-columns: 380px auto;
+  }
+}
 
 .marging {
   margin: auto 370px;
@@ -86,6 +95,9 @@ button {
   background-color: rgba($color: $dark-text, $alpha: 0.05);
   color: $dark-text;
   width: 940px;
+  &::placeholder {
+    color: $dark-text;
+  }
   padding: 10px 40px;
 }
 ::placeholder {
@@ -171,7 +183,7 @@ button {
 }
 
 .level-product {
-  padding: 110px 100px 258px;
+  padding: 110px 100px 40px;
   margin: auto 270px !important;
 }
 
@@ -189,7 +201,7 @@ button {
 
 .quality-level-list {
   li {
-    list-style: disc inside;
+    list-style: disc outside;
     font-size: 14px;
     &::marker {
       color: $pink-text;
@@ -206,6 +218,9 @@ button {
 .product-text {
   background: #f3f3f3;
   padding: 20px;
+  svg {
+    color: rgba($color: $dark-text, $alpha: 0.2);
+  }
 }
 
 .pink-background {
@@ -294,7 +309,8 @@ button {
   background-color: #f3f3f3;
   margin: 160px 0 120px;
   .floating-div-container {
-    padding: 65px 370px;
+    padding: 0 370px;
+    height: 130px;
   }
 }
 
@@ -341,6 +357,12 @@ footer {
 .social-icon {
   margin-top: 60px;
   gap: 30px;
+  svg {
+    color: $pink-text;
+    &:hover {
+      color: $dark-text;
+    }
+  }
 }
 
 .selection-bg {
@@ -358,6 +380,11 @@ footer {
   }
   .social-icon {
     margin-top: 40px;
+  }
+  .quality-level-list {
+    li {
+      list-style: inside;
+    }
   }
   footer {
     text-align: center;
@@ -418,7 +445,7 @@ footer {
     margin-top: 40px;
   }
   .level-product {
-    padding: 60px 10px 330px;
+    padding: 60px 10px 0;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
@@ -453,6 +480,11 @@ footer {
 @media screen and (min-width: 640px) and (max-width: 767px) {
   .clint-review {
     padding: 60px 15px;
+  }
+  .quality-level-list {
+    li {
+      list-style: inside;
+    }
   }
   .makeup-container {
     grid-template-columns: auto;
@@ -513,10 +545,24 @@ footer {
   .clint-review {
     padding: 60px 15px;
   }
-
+  .quality-level-list {
+    li {
+      list-style: inside;
+    }
+  }
   .ceo-saying {
     font-size: 18px !important;
     line-height: 28px !important;
+  }
+  .grind-banner {
+    bottom: -180px !important;
+    grid-template-columns: auto;
+    img {
+      width: 100%;
+    }
+    .floating-content-container {
+      grid-template-columns: auto;
+    }
   }
   .makeup-container {
     grid-template-columns: auto;
@@ -526,7 +572,7 @@ footer {
     gap: 40px;
   }
   .product-list {
-    margin: 80px 15px !important;
+    margin: 80px 15px 0 !important;
   }
   .actual-image-trio {
     img {
@@ -535,7 +581,7 @@ footer {
   }
 
   .level-product {
-    padding: 60px 10px 360px;
+    padding: 60px 10px 0;
     margin-left: 5px !important;
     margin-right: 5px !important;
   }
@@ -586,6 +632,16 @@ footer {
       width: 70%;
     }
   }
+  .grind-banner {
+    bottom: -150px !important;
+    grid-template-columns: auto auto;
+    img {
+      width: 100%;
+    }
+    .floating-content-container {
+      grid-template-columns: auto auto;
+    }
+  }
   .makeup-container {
     grid-template-columns: auto auto;
     margin-top: 60px;
@@ -606,7 +662,7 @@ footer {
   }
 
   .level-product {
-    padding: 60px 20px 320px;
+    padding: 60px 20px 0;
     margin-left: 20px !important;
     margin-right: 20px !important;
   }
@@ -638,9 +694,14 @@ footer {
 
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
   .level-product {
-    padding: 110px 80px 225px;
+    padding: 110px 80px 40px;
     margin-left: 40px !important;
     margin-right: 40px !important;
+  }
+  .floating-bg {
+    .floating-div-container {
+      padding: 0 100px;
+    }
   }
   .floating-banner {
     .floating-content-container {
@@ -648,15 +709,13 @@ footer {
       gap: 40px !important;
     }
     .floating-banner-btn {
-      padding: 25px 30px !important;
+      padding: 25px 46px !important;
     }
   }
   .content-box-makeup {
     padding-bottom: 30px;
   }
-  .markup-image {
-    margin-bottom: -30px;
-  }
+
   .actual-container {
     padding: 60px 20px 20px;
     margin: 0 20px;
@@ -688,6 +747,11 @@ footer {
   }
 }
 .hover-effect {
+  gap: 3px;
+  li {
+    font-size: 14px;
+    line-height: 20px;
+  }
   li:hover {
     opacity: 0.4;
     transition: 0.2s;
@@ -696,4 +760,10 @@ footer {
 
 .notScroll {
   overflow: hidden;
+}
+
+.floating-bg {
+  .floating-content-container {
+    gap: 92px;
+  }
 }

@@ -7,7 +7,7 @@ import ProductList from "./component/main/ProductList";
 import ClintReview from "./component/main/clintReview";
 import CeoContent from "./component/main/CeoContent";
 import Faq from "./component/main/FAQ";
-// import FloatingSection from "./component/main/FloatingSection";
+import FloatingSection from "./component/main/FloatingSection";
 import SampleMakeUp from "./component/main/SampleMakeUp";
 import Footer from "./component/main/Footer";
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <ClintReview />
       <CeoContent />
       <Faq />
-      {/* <FloatingSection /> */}
+      <FloatingSection />
       <SampleMakeUp />
       <Footer />
     </div>

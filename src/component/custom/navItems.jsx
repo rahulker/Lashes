@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
-const NavItems = ({ ItemText, paddingL, paddingR, borderPara }) => {
+const NavItems = ({ ItemText, paddingL, paddingR, borderPara, titleText }) => {
   return (
-    <a href="#">
-      <li
-        className={`py-1.5 border-${borderPara} border-solid`}
-        style={{ paddingLeft: paddingL, paddingRight: paddingR }}
-      >
+    <li
+      className={`py-1.5 border-${borderPara} border-solid`}
+      style={{ paddingLeft: paddingL, paddingRight: paddingR }}
+    >
+      <a href="#" title={titleText}>
         {ItemText}
-      </li>
-    </a>
+      </a>
+    </li>
   );
 };
 NavItems.propTypes = {
@@ -16,5 +16,6 @@ NavItems.propTypes = {
   paddingL: PropTypes.string.isRequired,
   paddingR: PropTypes.string.isRequired,
   borderPara: PropTypes.string.isRequired,
+  titleText: PropTypes.string,
 };
 export default NavItems;

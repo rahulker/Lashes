@@ -38,33 +38,24 @@ const Footer = () => {
             Die <span className="underline">Datenschutzbestimmungen </span>habe
             ich zur Kenntnis genommen
           </p>
-          <div className="social-icon flex justify-center lg:justify-start items-center flex-wrap">
+          <div className="social-icon flex justify-center transition lg:justify-start items-center flex-wrap">
             <a href="https://www.facebook.com/">
-              <FontAwesomeIcon
-                icon={faSquareFacebook}
-                style={{ color: "#ea5297" }}
-              />
+              <FontAwesomeIcon icon={faSquareFacebook} />
             </a>
             <a href="https://www.tiktok.com/">
-              <FontAwesomeIcon icon={faTiktok} style={{ color: "#ea5297" }} />
+              <FontAwesomeIcon icon={faTiktok} />
             </a>
             <a href="https://www.instagram.com/">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                style={{ color: "#ea5297" }}
-              />
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://www.youtube.com/">
-              <FontAwesomeIcon icon={faYoutube} style={{ color: "#ea5297" }} />
+              <FontAwesomeIcon icon={faYoutube} />
             </a>
             <a href="https://www.linkedin.com/">
-              <FontAwesomeIcon icon={faLinkedin} style={{ color: "#ea5297" }} />
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a href="https://www.pinterest.com/">
-              <FontAwesomeIcon
-                icon={faPinterest}
-                style={{ color: "#ea5297" }}
-              />
+              <FontAwesomeIcon icon={faPinterest} />
             </a>
           </div>
         </div>
@@ -157,9 +148,9 @@ const Footer = () => {
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="transition-all up-arrow rounded-md"
+            className=" up-arrow rounded-md"
           >
-            <FontAwesomeIcon icon={faArrowUp} style={{ color: "#fff" }} />
+            <FontAwesomeIcon icon={faArrowUp} className="up-arrow-svg" />
           </button>
         </div>
       </div>

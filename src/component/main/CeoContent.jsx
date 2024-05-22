@@ -22,7 +22,7 @@ const CeoContent = () => {
         <div className="main-ceo grid lg:grid-cols-2 grid-cols-1 items-center">
           <div className="content-box rounded-t-lg lg:rounded-none h-full">
             <div className="flex xl:gap-10 md:gap-5 gap-2 flex-col lg:flex-row text-center lg:text-left items-center">
-              <img src={PathImage.miniCeo} />
+              <img src={PathImage.miniCeo} alt="ceo profile photo" />
               <div>
                 <h3 className="ceo-name custom-title">
                   <span>Irina Yalcin</span>

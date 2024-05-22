@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const ProductDetails = ({ imgContent, FristPara, SecondPara }) => {
   return (
     <div className="flex items-center md:justify-start gap-1.5">
-      <img src={imgContent} />
+      <img src={imgContent} alt="product image" />
       <div className="flex sm:flex-col flex-row gap-1">
         <p>{FristPara}</p>
         <p>{SecondPara}</p>

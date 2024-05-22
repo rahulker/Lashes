@@ -14,11 +14,11 @@ const SwiperSlideItem = ({ clintImage, clintName, clintSaying, clintDate }) => {
           <p>{clintName}</p>
           <p className="clint-say-date">{clintDate}</p>
           <div className="flex items-center">
-            <img src={PathImage.star} />
-            <img src={PathImage.star} />
-            <img src={PathImage.star} />
-            <img src={PathImage.star} />
-            <img src={PathImage.star} />
+            <img src={PathImage.star} alt="product review star" />
+            <img src={PathImage.star} alt="product review star" />
+            <img src={PathImage.star} alt="product review star" />
+            <img src={PathImage.star} alt="product review star" />
+            <img src={PathImage.star} alt="product review star" />
           </div>
         </div>
       </div>
