@@ -2,7 +2,11 @@ import { useState } from "react";
 import PathImage from "../../constant/imagePath";
 import NavItems from "../custom/navItems";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faXmark,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 const NavigationBar = () => {
   const [active, setActive] = useState(false);
   const updateMenu = () => {
@@ -158,11 +162,7 @@ const NavigationBar = () => {
       <nav className="py-2.5 px-3.5 xl:hidden flex justify-between relative border-b border-color border-solid z-30">
         <div className="flex items-center gap-5">
           <button onClick={updateMenu}>
-            <img
-              src={PathImage.mobileMenu}
-              alt="mobile menu"
-              title="click to open menu"
-            />
+            <FontAwesomeIcon icon={active ? faXmark : faBars} />
           </button>
           <div
             className={`absolute ${
@@ -264,6 +264,7 @@ const NavigationBar = () => {
               className="w-2/3 py-3.5 pr-2.5"
               title="miss lashes"
             />
+
             <FontAwesomeIcon icon={faAngleDown} />
           </div>
         </div>
