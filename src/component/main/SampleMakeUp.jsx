@@ -56,7 +56,7 @@ const SampleMakeUp = () => {
           <div className="lg:mt-10 mt-5 w-fit mx-auto hidden  lg:inline-block">
             <CustomButton text="Jetzt registrieren & Rabatte sichern" />
           </div>
-          <div className="lg:mt-10 mt-5 w-fit mx-auto lg:hidden md:mt-8">
+          <div className="lg:mt-10  mt-5 w-fit mx-auto lg:hidden md:mt-8">
             <CustomButton text="Jetzt als Kosmetikstudio registrieren" />
           </div>
         </div>

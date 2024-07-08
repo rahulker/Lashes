@@ -273,19 +273,19 @@ const NavigationBar = () => {
             src={PathImage.mobileSearch}
             alt="mobile search icon"
             title="search items"
-            className="cursor-pointer"
+            className="cursor-pointer w-[22%]"
           />
           <img
             src={PathImage.userIcon}
             alt="User icon"
             title="user profile"
-            className="cursor-pointer"
+            className="cursor-pointer w-[22%]"
           />
           <img
             src={PathImage.shoppingCart}
             alt="search Icon"
             title="cart"
-            className="cursor-pointer"
+            className="cursor-pointer w-[22%]"
           />
         </div>
       </nav>
